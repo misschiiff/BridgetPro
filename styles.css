@@ -17,6 +17,7 @@
   --secondary-p-color: #0188ff;
   --h1-font-size: 3.8rem; 
   --p-font-size: 2.3rem;
+  --1-font-size: 1.6rem;
   --secondary-p-font-size: 0.9rem;
 }
 
@@ -50,11 +51,12 @@ body {
   overflow-wrap: break-word; /* Ensure long words break and wrap */
   white-space: normal;
 }
+
 .hero p {
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
 color:var(--primary-color);
-font-weight: 500;
-font-size: var(--p-font-size);
+font-weight: 300;
+font-size: var(--1-font-size);
 word-wrap: break-word; /* Ensure words break onto the next line */
 white-space: normal;
 padding: 10px;
@@ -313,6 +315,15 @@ overflow-wrap: break-word; /* Ensure long words break and wrap */
 white-space: normal;
 }
 
+.About h2 {
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
+  color:var(--h1-color)!important;
+  font-weight: 900;
+  font-size: var(--p-font-size);
+  word-wrap: break-word; /* Ensure words break onto the next line */
+  overflow-wrap: break-word; /* Ensure long words break and wrap */
+  white-space: normal;
+  }
 
 .About p {
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
@@ -328,10 +339,13 @@ white-space: normal;
 
 
 .About .btn-primary {
-  background-color: var(--button-background);
+  background-color: var(--h1-color);
+  color: var(--background-color);
   border: none;
   align-self: center;
   margin-top: -10px;
+  align-items: center;
+  font-weight: 200;
 }
 
 
