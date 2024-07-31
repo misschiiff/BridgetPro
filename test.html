@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners Section</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .partners {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .partners h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        .partner-card {
+            position: relative;
+            overflow: hidden;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .partner-card:hover {
+            transform: scale(1.05);
+        }
+        .partner-card img {
+            max-height: 70%;
+            max-width: 70%;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 1.5rem;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="partners">
+        <div class="container">
+            <h2>My Partners</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="partner-card">
+                        <img src="your-image-url-1.jpg" alt="Partner 1">
+                        <div class="overlay">&rarr;</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="partner-card">
+                        <img src="your-image-url-2.jpg" alt="Partner 2">
+                        <div class="overlay">&rarr;</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="partner-card">
+                        <img src="your-image-url-3.jpg" alt="Partner 3">
+                        <div class="overlay">&rarr;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

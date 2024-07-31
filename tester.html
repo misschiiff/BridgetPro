@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Pills with Cards</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .card-label {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 50px;
+      font-size: 0.75rem;
+    }
+    .card-overlay {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 1.25rem;
+    }
+    .nav-pills .nav-link {
+      color: black;
+    }
+    .nav-pills .nav-link.active {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- Pills Navigation -->
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Tab 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Tab 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Tab 3</a>
+      </li>
+    </ul>
+    <!-- Pills Tab Content -->
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="card-deck position-relative">
+            <div class="partner-card2">
+                <div class="card-overlay">Overlay 1</div>
+                  <img src="img/IMG_2149.PNG" alt="Partner 3">
+                  <div class="card-label">Label 1</div>
+                  <div class="overlay">&rarr;</div>
+              </div>
+              <div class="partner-card2">
+                <div class="card-overlay">Overlay 1</div>
+                  <img src="img/IMG_2149.PNG" alt="Partner 3">
+                  <div class="card-label">Label 1</div>
+                  <div class="overlay">&rarr;</div>
+              </div>
+              <div class="partner-card2">
+                <div class="card-overlay">Overlay 1</div>
+                  <img src="img/IMG_2149.PNG" alt="Partner 3">
+                  <div class="card-label">Label 1</div>
+                  <div class="overlay">&rarr;</div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="card-deck position-relative">
+          <div class="card">
+            <div class="position-relative">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-overlay">Overlay 4</div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title 4</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card-label">Label 4</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="position-relative">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-overlay">Overlay 5</div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title 5</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card-label">Label 5</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="position-relative">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-overlay">Overlay 6</div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title 6</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card-label">Label 6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div class="card-deck position-relative">
+          <div class="card">
+            <div class="position-relative">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-overlay">Overlay 7</div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title 7</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card-label">Label 7</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="position-relative">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-overlay">Overlay 8</div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title 8</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card-label">Label 8</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="position-relative">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-overlay">Overlay 9</div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title 9</h5>
+
+              <div class="card-label">Label 9</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+</body>
+</html>
