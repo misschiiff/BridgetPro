@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BridgetPro - Software Engineer</title>
+    <link rel="icon" href="assets/img/BRPR-LOGO-PINK&PURPLE.svg" type="image">
+  
+    <!-- Favicon -->
+   <link href="assets/img/BRPR-LOGO-PINK&PURPLE.svg" rel="shortcut icon"/>
+
+      <!-- Meta Tags for SEO and Social Media -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@bridgetpromax">
+      <meta name="twitter:title" content="Software Developer | Branding Expert | Marketing & Sales">
+      <meta name="twitter:description" content="I turn ideas into fully functional and profitable businessess from research to, Brand design, Web development, Marketing and Sales">
+      <meta name="twitter:image" content="https://www.bridgetpro.com.ng/assets/img/img/og-img.png">
+      <meta property="og:title" content="Bridgetpro - Software Developer | Branding Expert | Marketing & Sales">
+      <meta property="og:description" content="I turn ideas into fully functional and profitable businessess from research to, Brand design, Web development, Marketing and Sales">
+      <meta property="og:image" content="https://www.bridgetpro.com.ng/assets/img/og-img.png">
+      <meta property="og:url" content="https://www.bridgetpro.com.ng">
+      <meta property="og:type" content="website">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Custom CSS -->
+<style>
+    html,body {
+      font-family: sans-serif, jakarta pulse;
+        background-color: #0c0c0c;
+        color: white;
+        font-family: Arial, sans-serif;
+        height: 100%;
+        margin: 0;
+        scroll-snap-type: mandatory;
+        scroll-padding: 1rem;
+        --film--aspect-ratio: calc(4/6);
+        --film--width: 220px;
+
+    }  
+
+
+
+    
+
+
+    .slide-reel{
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  max-width: 100%;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+  padding: 2rem;
+  margin: 2rem;
+  *{box-sizing: border-box};
+  .slide-container{
+}
+}
+.film{
+  min-width: var(--film--width);
+  width: var(--film--width);
+  height: calc(var(--film--width) / var(--film--aspect-ratio));
+  background: rgba(100,100,100,0.3);
+  margin:0 2rem 2rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5), 2px 3px 10px rgba(0,0,0,0.5);
+  scroll-snap-align: start;
+  border-radius: .5rem;
+  overflow: hidden;
+  position: relative;
+  transition: all .3s ease-in-out;
+  p {
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 8rem 1rem 2rem;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+    margin:0;
+    opacity: 0;
+    visibility: 0;
+    transform: translateY(3rem);
+    transition: all .4s ease-in-out;
+  }
+  img {
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+
+  }
+  &:hover{
+     box-shadow: 0 1px 3px rgba(0,0,0,0.5), 2px 3px 10px rgba(0,0,0,0.5);
+     p {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="assets/img/BRPR-LOGO-PINK&PURPLE.svg" height="24px" alt="bridgetpro">
+        </a>
+
+        <!-- Custom Hamburger Menu -->
+        <button class="navbar-toggler custom-toggler align-items-right" id="menuToggle">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+
+        
+<!-- Navbar Links (Desktop) -->
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav neon-border">
+        <li class="nav-item" id="home"><a class="nav-link" href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+        <li class="nav-item" id="about"><a class="nav-link" href="#aboutbrpr"><i class="fa fa-info-circle"></i><span>About</span></a></li>
+        <li class="nav-item" id="projects"><a class="nav-link" href="#portfolio"><i class="fa fa-briefcase"></i><span>Projects</span></a></li>
+        <li class="nav-item" id="experience"><a class="nav-link" href="#aboutbrpr"><i class="fa fa-cogs"></i><span>Experience</span></a></li>
+    </ul>
+</div>
+
+
+        <!-- Right-Aligned Buttons -->
+        <div class="d-flex align-items-center d-none d-lg-flex">
+            <a class="btn btn-gradient me-3" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Hire Me</a>
+            <button class="btn btn-circle"><i class="fas fa-user"></i></button>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<!-- Full-Screen Overlay (Mobile Menu) -->
+<div id="mobileMenuOverlay" class="overlay">
+    <button class="close-btn" id="closeMenu">&times;</button>
+    <ul class="overlay-menu">
+        <li><a href="#aboutbrpr">About</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#aboutbrpr">Experience</a></li>
+        <li><a href="#" class="btn btn-gradient"  data-bs-toggle="modal" data-bs-target="#contactModal">Hire Me</a></li>
+    </ul>
+</div>
+
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+
+
+     <!-- Move Image Cards Below CTA -->
+     <div class="hero-image-wrapper">
+        <div class="hero-image-cards">
+            <div class="image-card"><img src="assets/img/heroimagecards.svg" alt="bridgetpro"></div>
+            <div class="image-card"><img src="assets/img/heroimagecards2.svg" alt="bridgetpro"></div>
+            <div class="image-card"><img src="assets/img/heroimagecards3.svg" alt="bridgetpro"></div>
+        </div>
+     </div>
+
+
+
+
+     <div class="container">
+        <h1>Clean Designs, websites & Apps</h1>
+        <p>With a mobile first approach focused on functionality, efficience, seo, user-friendly, modern designs and project development.</p>
+    </div>
+
+
+
+
+
+     <a href="#" class="btn btn-gradient" data-bs-toggle="modal" data-bs-target="#contactModal">Lets Work</a> 
+    </header>
+
+
+<!-- Logo Slider -->
+<!-- Logo Carousel Section -->
+<section class="logo-carousel">
+    <div class="carousel-wrapper">
+        <div class="carousel-track">
+            <span>✦ Xammp ✦ Vsc ✦ MySql ✦ Git & Github ✦ Javascript ✦ Php ✦ Html5 ✦ Css3 ✦ Figma ✦</span>
+            <span>Javascript ✦ Php ✦ Html5 ✦ Css3 ✦ Ajax ✦ Jquery ✦ Bootstrap ✦ React ✦</span>
+            <span>✦ Ajax ✦ Jquery ✦ Bootstrap ✦ React ✦ Figma ✦ Xammp ✦ Vsc ✦ MySql ✦ MySql ✦ Git & Github ✦</span>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Process Section -->
+   <!-- Design Process Section -->
+<section class="process-section section">
+    <div class="container">
+        <h2 class="section-title">My work process ✦</h2>
+        
+        <div class="process-steps">
+            <!-- Step 1 -->
+            <div class="step">
+                <div class="step-icon">
+                    1
+                </div>
+                <div class="step-content">
+                    <div class="step-top-icon">
+                        <img src="assets/img/step1.svg" alt="bridgetpro">
+                    </div>
+                    <h4>Step 1: Product Design Research</h4>
+                    <p>This includes systematic and thorough exploration of the market landscape.</p>
+                    <a href="#" class="btn-step">See Examples</a>
+                </div>
+            </div>
+        
+
+            <!-- Step 2 -->
+            <div class="step">
+                <div class="step-icon">
+                    2
+                </div>
+                <div class="step-content">
+                    <div class="step-top-icon">
+                        <img src="assets/img/step2.svg" alt="bridgetpro">
+                    </div>
+                    <h4>Step 2: UI Design in Figma</h4>
+                    <p>Creating user-friendly, modern interfaces in Figma.</p>
+                </div>
+            </div>
+
+                        <!-- Step 4 -->
+                        <div class="step">
+                            <div class="step-icon">
+                                3
+                            </div>
+                            <div class="step-content">
+                                <div class="step-top-icon">
+                                    <img src="assets/img/step3.svg" alt="bridgetpro">
+                                </div>
+                                <h4>Step 3: Coding and Development </h4>
+                                <p>Translating designs into fully functional websites using Javascript/Php.</p>
+                            </div>
+                        </div>
+
+            <!-- Step 3 -->
+            <div class="step">
+                <div class="step-icon">
+                    4
+                </div>
+                <div class="step-content">
+                    <div class="step-top-icon">
+                        <img src="assets/img/step1.svg" alt="bridgetpro">
+                    </div>
+                    <h4>Step 4: Marketing and Sales</h4>
+                    <p>Seo Optimization, Marketing strategy Web and social media campaign ads and sales conversion.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Featured Projects -->
+  <!-- Featured Projects Section -->
+<section class="featured-projects section" id="portfolio">
+    <div class="container">
+        <h2 class="section-title">Some Featured Projects ✦</h2>
+
+        <div class="projects-grid">
+
+              <!-- Project 2 -->
+              <a href="https://www.bridgetpro.com.ng"  class="project-card" style="text-decoration: none;">
+            
+                <div class="project-image">
+                    <img src=""height="200px" alt="bridgetpro">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">1</div>
+                    <h4 class="project-name">BLOG WEB APP</h4>
+                </div>
+            </a>
+
+             <!-- Project 3 -->
+             <a href="https://www.bridgetpro.com.ng"  class="project-card" style="text-decoration: none;">
+                 <div class="project-image">
+                     <img src=""height="200px" alt="bridgetpro">
+                 </div>
+                 <div class="project-info">
+                     <div class="project-number">2</div>
+                     <h4 class="project-name">SIMPLE LANDING PAGE</h4>
+                 </div>
+                </a>
+
+              <!-- Project 4 -->
+              <a href="https://www.bridgetpro.com.ng"  class="project-card" style="text-decoration: none;">
+                <div class="project-image">
+                    <img src=""height="200px" alt="bridgetpro">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">3</div>
+                    <h4 class="project-name">VPN APP LANDING</h4>
+                </div>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="https://www.bridgetpro.com.ng"  class="project-card" style="text-decoration: none;">
+                <div class="project-image">
+                    <img src=""height="200px" alt="bridgetproi">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">4</div>
+                    <h4 class="project-name">TRAVEL AGENCY</h4>
+                </div>
+            </a>
+
+            <!-- Project 6 -->
+            <a href="https://www.bridgetpro.com.ng"  class="project-card" style="text-decoration: none;">
+                <div class="project-image">
+                    <img src="" height="200px" alt="bridgetpro">  
+                </div>
+                <div class="project-info">
+                    <div class="project-number">5</div>
+                    <h4 class="project-name">SOFTWARE FIRM WEB APP</h4>
+                </div>
+            </a>
+
+            <!-- Project 7 -->
+            <a href="https://www.bridgetpro.com.ng"  class="project-card" style="text-decoration: none;">
+                <div class="project-image" > 
+                    <img src="" height="200px" alt="bridgetpro">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">6</div>
+                    <h4 class="project-name">PORTFOLIO WEBSITE</h4>
+                </div>
+            </a>
+
+                        <!-- Project 8 -->
+                        <a href="https://www.bridgetpro.com.ng"  class="project-card" style="text-decoration: none;">
+                            <div class="project-image"> 
+                                <img src="" height="200px" alt="bridgetpro">
+                            </div>
+                            <div class="project-info">
+                                <div class="project-number">7</div>
+                                <h4 class="project-name" href="https://www.bridgetpro.com.ng"> AI POWERED SPORTS BETTING LANDING</h4>
+                            </div>
+                        </a>
+
+            <!-- Project 4 -->
+            <a href="https://www.bridgetpro.com.ng"  class="project-card" style="text-decoration: none;">
+                <div class="project-image" >
+                    <img src="" height="200px" alt="bridgetpro"> 
+                </div>
+                <div class="project-info">
+                    <div class="project-number">8</div>
+                    <h4 class="project-name">CRM WEB APP</h4>
+                </div>
+            </a>
+
+           
+            <a href="https://www.bridgetpro.com.ng"  class="project-card" style="text-decoration: none;">
+                <div class="project-image" >
+                    <img src="" height="200px" alt="bridgetpro">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">9</div>
+                    <h4 class="project-name">ONLINE FASHION STORE</h4>
+                </div>
+            </a>
+
+            <a href="https://www.bridgetpro.com.ng"  class="project-card" style="text-decoration: none;">
+                <div class="project-image">
+                    <img src="" height="200px" alt="bridgetpro">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">10</div>
+                    <h4 class="project-name">FRAMER TO HTML CONVERSION</h4>
+                </div>
+            </a>
+            
+            <a href="https://www.bridgetpro.com.ng" target="_blank" class="project-card" style="text-decoration: none;">
+                <div class="project-image">
+                    <img src="assets/img/Group 10010.svg" height="200px" alt="bridgetpro">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">11</div>
+                    <h4 class="project-name">MY CURRENT PORTFOLIO</h4>
+                </div>
+            </a>
+        </div>
+        
+
+    </div>
+</section>
+
+
+
+<section class="">
+
+</section>
+
+
+
+
+<section class="gif-section2 d-flex align-items-center justify-content-center section">
+    <div class="overlayyy"></div>
+    <div class="content-card">
+        <h2>Got a project?</h2>
+        <p>Great! get the best digital solutions tailored to your needs.</p>
+        <a href="#" class="btn btn-gradient2" data-bs-toggle="modal" data-bs-target="#contactModal">Get Started</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="About-section section" id="aboutbrpr">
+
+  <div class="container d-flex gap-4 mt-5">
+    <div class="row gy-4">
+        <div class="col-md-4">   
+     <div class="experience-section">
+        <h5 class="exp-title">Experience</h5>
+        <div class="exp-item">
+            <div class="number green">1</div>
+            <div>
+                <strong>Project Manager @ Xora corp</strong>
+                <p class="mb-0">Managing a team of designers and developers to deliver exceptional products and services</p>
+            </div>
+        </div>
+        <div class="exp-item">
+            <div class="number pink">2</div>
+            <div>
+                <strong>Web Developer @ Finrik</strong>
+                <p class="mb-0">Building websites and apps from design to implementation working in a close-knitted team</p>
+            </div>
+        </div>
+        <div class="exp-item">
+            <div class="number yellow">3</div>
+            <div>
+                <strong>Design Intern @ Finrik</strong>
+                <p class="mb-0">Designing web and mobile interface as well as graphics for ads and social conversion</p>
+            </div>
+        </div>
+     </div>
+    </div>
+
+     <div class="col-md-4 text-left">
+  <div class="profile-card">
+        <div class="d-flex justify-content-between">
+            <div class="circle" style="width: 50px; height: 50px; border-radius: 50%; background: gray;"><img src="assets/img/profile-picture.svg" height="50px;" style="border-radius:50px;"></div>
+            <button class="hire-btn border-0" data-bs-toggle="modal" data-bs-target="#contactModal">Hire Me</button>
+        </div>
+        <h5 class="mt-3">BridgetPro | Frontend Engineer</h5>
+        <p>A frontend-obsessed full-stack engineer, and project manager crafting sleek, high-performance digital experiences. Passionate about UI/UX, scalability, modern web technologies.</p>
+        <div class="d-flex gap-2">
+            <span class="badge bg-light text-dark">Bootstrap</span>
+            <span class="badge bg-danger">React</span>
+            <span class="badge bg-warning text-dark">Javascript</span>
+            <span class="badge bg-primary">Php</span>
+        </div>
+    </div>
+</div>
+
+
+
+ <!-- Skills Card -->
+ <!-- Skills Card (Right) -->
+ <div class="col-md-4">
+    <div class="boxed-container skills-card p-3">
+      <h3 class="exp-title" style="font-size: small;">Skills</h3>
+      <div class="row g-2">
+        <div class="col-6 col-md-4">
+          <span class="badge bg-light text-dark">Concept Development</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-danger">Graphic Design</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-warning text-dark">Illustration</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-primary">Frontend Development</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-light text-dark">Full Stack Development</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-danger">UI/UX</span>
+        </div>
+        <div class="col-6 col-md-4">
+            <span class="badge bg-primary">System Design</span>
+          </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-warning text-dark">Photo Editing & Retouch</span>
+        </div>
+        <div class="col-6 col-md-4">
+            <span class="badge bg-light text-dark">Marketing & Sales </span>
+          </div>
+      </div>
+
+
+      <h3 class="exp-title mt-5" style="font-size:small;">ToolKit</h3>
+      <div class="row g-2">
+        <div class="col-6 col-md-4">
+          <span class="badge bg-light text-dark">Visual studio code</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-danger">Sql work Bench</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-warning text-dark">Adobe Illustrator</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-primary">Figma</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-light text-dark">Photoshop</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-danger">Xampp</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-danger">After Effect</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="badge bg-warning text-dark">Ms suite</span>
+        </div>
+        <div class="col-6 col-md-4">
+            <span class="badge bg-light text-dark">Git & Github</span>
+          </div>
+          <div class="col-6 col-md-4">
+            <span class="badge bg-light text-dark">Google business suite</span>
+          </div>
+          <div class="col-6 col-md-4">
+            <span class="badge bg-primary">Meta Business suite</span>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+
+<div class="slide-container">
+  <ul class="slide-reel">
+  </ul>
+  <div id="prev"></div>
+  <div id="next"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container section">
+	<div class="row">
+		<h2>Videos</h2>
+	</div>
+ 
+    <div class="row blog">
+        <div class="col-md-12">
+            <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#blogCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/v2M_sWoRHQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/Mb2-kPry8lI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/RKda52b7rIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/eZ0eHMLB_-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </a>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/Mb2-kPry8lI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/v2M_sWoRHQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/RKda52b7rIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/eZ0eHMLB_-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </a>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+
+                </div>
+                <!--.carousel-inner-->
+            </div>
+            <!--.Carousel-->
+
+        </div>
+    </div>
+</div>
+</section>  
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="gif-section d-flex align-items-center justify-content-center section">
+        <div class="overlayy"></div>
+        <div class="content-card">
+            <h2>Enterprise Digital Suite</h2>
+            <p>Complete solutions for a powerful digital experience.</p>
+            <a href="#" class="btn btn-gradient2" data-bs-toggle="modal" data-bs-target="#contactModal">Get Started</a>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Testimonials Section -->
+   <!-- Testimonials Section -->
+<section class="testimonials-section text-center py-5 section">
+  <div class="container">
+      <h2 class="text-white">Client Testimonials</h2>
+      
+      <div class="testimonial-carousel-wrapper">
+          <!-- First row moving left to right -->
+          <div class="testimonial-row first-row">
+              <div class="testimonial-card">
+                  <p>"Amazing service! Highly recommend."</p>
+                  <h5>Jane Doe - UX Designer</h5>
+              </div>
+              <div class="testimonial-card">
+                  <p>"Top-notch quality and support!"</p>
+                  <h5>John Smith - CEO</h5>
+              </div>
+              <div class="testimonial-card">
+                  <p>"Truly exceeded my expectations!"</p>
+                  <h5>Lisa Brown - Product Manager</h5>
+              </div>
+          </div>
+
+          <!-- Second row moving right to left -->
+          <div class="testimonial-row second-row">
+              <div class="testimonial-card">
+                  <p>"Innovative and reliable team!"</p>
+                  <h5>Mike Johnson - Developer</h5>
+              </div>
+              <div class="testimonial-card">
+                  <p>"Best experience I’ve had!"</p>
+                  <h5>Sarah Wilson - Marketer</h5>
+              </div>
+              <div class="testimonial-card">
+                  <p>"A game-changer for our business!"</p>
+                  <h5>Chris Evans - Founder</h5>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!--
+    <section class="gif-section3 d-flex align-items-center justify-content-center">
+        <div class="overlayyy"></div>
+    </section>
+-->
+
+
+
+
+
+
+
+
+    <!-- Contact Section 
+    <section class="contact-section py-5" style="overflow: hidden;">
+
+        <div class="row d-flex align-items-center justify-content-start">
+            <div class="col-md-6 text-left">
+                <div class="container text-left">
+                    <h2>Have an idea about a project?</h2>
+                    <p>Let's bring your vision to life.</p>
+                    <a href="#" class="btn btn-gradient" data-bs-toggle="modal" data-bs-target="#contactModal">Send a Message</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-right d-flex justify-content-end" style="margin-right: -350px;">
+                <div class="container text-right">
+              <img src="assets/img/corn-grid.svg" height="200px" alt="bridgetpro">
+            </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+   
+
+
+
+   
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer-logo"><span style="color: #ffcc70;">BridgetPro</span></div>
+
+  <div class="social-icons">
+      <a href="https://x.com/Bridgetpromax"><i class="fab fa-twitter"></i></a>
+    <!--   <a href="#"><i class="fab fa-dribbble"></i></a> -->
+      <a href="https://www.instagram.com/bridgetizba/"><i class="fab fa-instagram"></i></a>
+    <!--  <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+  </div>
+
+  <div class="hire-button">
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">Hire Me</button>
+      <div class="icon"><i class="fas fa-user"></i></div>
+  </div>
+
+</footer>
+
+
+
+<!-- Modal -->
+  <!-- Details Modal -->
+  <div id="staticBackdrop" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="row">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="assets/img/Frame 150.svg" height="50px;" alt="bridgetpro">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4 text-dark">
+                    <h3>Welcome</h3>
+                    <hr>
+                    <p>Use the button below to access my git where all my portfolio projects have ben properly arraged, hosted.</p>
+                    <h4>Disclaimer</h4>
+                    <p>I build software and digital experiences following industry standard and best practices, i am not responsible for how the client herein decides to use the software/product built for them. Below are a list of my Expertise </p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="d-flex">
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="flex-grow-1">Software Design</div>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="flex-grow-1">Software Development</div>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="flex-grow-1">Brand identity design</div>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="flex-grow-1">Sales and Marketing</div>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="flex-grow-1">ui/ux | Motion Design</div>
+                        </li>
+                    </ul>
+                    <a id="modalCtaBtn" class="btn-solid-reg" href="misschif.github.io">Github</a>
+                    <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Exit</button>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of modal-content -->
+    </div> <!-- end of modal-dialog -->
+</div> <!-- end of modal -->
+<!-- end of details modal -->
+  
+
+
+
+
+
+<!-- Bootstrap Modal -->
+<div class="modal fade text-dark" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="contactModalLabel">Work With Me</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="clientForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectType" class="form-label">Project Type</label>
+              <select class="form-select" id="projectType" required>
+                <option value="" disabled selected>Select a project</option>
+                <option value="Website Development">Website Development</option>
+                <option value="App Development">App Development</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="details" class="form-label">Project Details</label>
+              <textarea class="form-control" id="details" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="contactMethod" class="form-label">Preferred Contact Method</label>
+              <select class="form-select" id="contactMethod" required>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="telegram">Telegram</option>
+                <option value="email">Email</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-gradient">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <script src="script.js"></script>
+
+
+
+
+
+  <!-- Button to Open Modal
+  <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">Work With Me</button>  -->
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+  document.getElementById('clientForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+  
+      // Get form values
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+      let phone = document.getElementById('phone').value;
+      let projectType = document.getElementById('projectType').value;
+      let details = document.getElementById('details').value;
+      let contactMethod = document.getElementById('contactMethod').value;
+  
+      // Validation
+      if (!name || !email || !phone || !projectType) {
+          alert("All fields are required.");
+          return;
+      }
+  
+      // Format the message
+      let message = `Hello, I am interested in working with you. Here are my details:\n\n*Name:* ${name}\n*Email:* ${email}\n*Phone:* ${phone}\n*Project Type:* ${projectType}\n*Details:* ${details}`;
+  
+      // Contact URL
+      let contactUrl = "";
+      if (contactMethod === 'whatsapp') {
+          contactUrl = `https://wa.me/2347018116934?text=${encodeURIComponent(message)}`;
+      } else if (contactMethod === 'telegram') {
+          contactUrl = `https://t.me/Bridgetpromax?text=${encodeURIComponent(message)}`;
+      } else {
+          alert("Done! We will contact you soon.");
+          document.getElementById('clientForm').reset();
+          let modalElement = document.getElementById('contactModal');
+          let modalInstance = bootstrap.Modal.getInstance(modalElement);
+          modalInstance.hide();
+          return;
+      }
+  
+      // Open WhatsApp or Telegram
+      window.open(contactUrl, '_blank');
+  
+      // Close the modal
+      let modalElement = document.getElementById('contactModal');
+      let modalInstance = bootstrap.Modal.getInstance(modalElement);
+      modalInstance.hide();
+  
+      // Reset form
+      document.getElementById('clientForm').reset();
+  });
+
+
+
+  </script>
+  
+
+
+
+<!-- Custom JS -->
+<script>
+    <!--
+ /// const moviesDB = [ 
+ /// { title: "Xora Corp", date: "Enterprise Package", img: "assets/img/heroimagecards.svg" },
+ /// { title: "Godzilla vs. Kong", date: "Mar 24, 2021", img: "assets/img/heroimagecards.svg" },
+ /// { title: "Nobody", date: "Mar 18, 2021", img: "assets/img/heroimagecards.svg" },
+  ///{ title: "Justice League", date: "Mar 18, 2021", img: "assets/img/heroimagecards.svg" },
+ /// { title: "Thunder Force", date: "Apr 09, 2021", img: "assets/img/heroimagecards.svg" },
+///];
+///const track = document.querySelector(".carousel-track");
+
+///function createMovieSlide(movie) {
+///    const movieElement = document.createElement("div");
+ ///   movieElement.classList.add("movie");
+ ///   movieElement.innerHTML = `
+ ///       <img src="${movie.img}" alt="${movie.title}">
+ ////       <p>${movie.title}</p>
+ ///       <small>${movie.date}</small>
+ ///   `;
+  ///  return movieElement;
+ ///}
+
+ ///function loadCarousel() {
+  ///   moviesDB.forEach(movie => {
+  ///       track.appendChild(createMovieSlide(movie));
+  ///   });
+
+    /// Duplicate slides to make it seamless
+  ///   moviesDB.forEach(movie => {
+   ///      track.appendChild(createMovieSlide(movie));
+   ///  });
+ ///}
+
+ ///loadCarousel();
+-->
+
+
+
+
+
+   
+
+
+
+
+
+
+
+    
+</script>
+
+    <!--Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

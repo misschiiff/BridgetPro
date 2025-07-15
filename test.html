@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bridget Pro - Software Engineer</title>
+
+  <!-- Meta Tags for SEO and Social Media -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bridgetpromax">
+  <meta name="twitter:title" content="Professional Software developer, Web Designer, Tutor, Coach & Entrepreneur">
+  <meta name="twitter:description" content="PProfessional Software developer, Web Designer, Tutor, Coach & Entrepreneur">
+  <meta name="twitter:image" content="https://www.bridgetpro.com.ng/assets/img/img/og-img.png">
+  <meta property="og:title" content="Bridgetpro - The resilient spirit! doing hard things">
+  <meta property="og:description" content="Professional Software developer, Web Designer, Tutor, Coach & Entrepreneur">
+  <meta property="og:image" content="https://www.bridgetpro.com.ng/assets/img/img/og-img.png">
+  <meta property="og:url" content="https://www.bridgetpro.com.ng">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Portfolio Gallery with Infinite Animation</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      transition: all 0.5s ease;
+      cursor: pointer;
+    }
+
+    .card.shrink {
+      animation: shrinkBounce 1s ease-in-out; /* Shrink with bounce */
+    }
+
+    .card.expand {
+      animation: expandBounce 1s ease-in-out; /* Expand with bounce */
+    }
+
+    @keyframes shrinkBounce {
+      0% { transform: scale(1); }
+      50% { transform: scale(0.8); } /* Shrink to 80% */
+      70% { transform: scale(0.85); } /* Slight bounce back */
+      100% { transform: scale(0.8); } /* Final shrunk size */
+    }
+
+    @keyframes expandBounce {
+      0% { transform: scale(0.8); }
+      50% { transform: scale(1.1); } /* Expand slightly larger */
+      70% { transform: scale(0.95); } /* Slight bounce back */
+      100% { transform: scale(1); } /* Final normal size */
+    }
+
+    .row-animation {
+      display: flex;
+      width: 100%;
+      overflow: hidden; /* Hide overflow to prevent horizontal scroll */
+    }
+
+    .move-right {
+      animation: moveRight 10s linear infinite; /* Adjust duration as needed */
+    }
+
+    .move-left {
+      animation: moveLeft 10s linear infinite; /* Adjust duration as needed */
+    }
+
+    @keyframes moveRight {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); } /* Move to the left */
+    }
+
+    @keyframes moveLeft {
+      0% { transform: translateX(-100%); } /* Start from the left */
+      100% { transform: translateX(0); } /* Move to the right */
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">My Projects</h1>
+
+    <!-- First Row (Moves Right) -->
+    <div class="row row-animation move-right">
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/img/port/portfolio2.svg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Short description of the project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/img/port/portfolio2.svg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">Short description of the project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/img/port/portfolio2.svg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">Short description of the project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/img/port/portfolio2.svg" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">Project 4</h5>
+            <p class="card-text">Short description of the project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/img/port/portfolio2.svg" class="card-img-top" alt="Project 5">
+          <div class="card-body">
+            <h5 class="card-title">Project 5</h5>
+            <p class="card-text">Short description of the project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row (Moves Left) -->
+    <div class="row row-animation move-left mt-4">
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/img/port/portfolio2.svg" class="card-img-top" alt="Project 6">
+          <div class="card-body">
+            <h5 class="card-title">Project 6</h5>
+            <p class="card-text">Short description of the project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/img/port/portfolio2.svg" class="card-img-top" alt="Project 7">
+          <div class="card-body">
+            <h5 class="card-title">Project 7</h5>
+            <p class="card-text">Short description of the project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/img/port/portfolio2.svg" class="card-img-top" alt="Project 8">
+          <div class="card-body">
+            <h5 class="card-title">Project 8</h5>
+            <p class="card-text">Short description of the project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/img/port/portfolio2.svg" class="card-img-top" alt="Project 9">
+          <div class="card-body">
+            <h5 class="card-title">Project 9</h5>
+            <p class="card-text">Short description of the project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/img/port/portfolio2.svg" class="card-img-top" alt="Project 10">
+          <div class="card-body">
+            <h5 class="card-title">Project 10</h5>
+            <p class="card-text">Short description of the project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const firstRowCards = document.querySelectorAll(".row-animation.move-right .card");
+      const secondRowCards = document.querySelectorAll(".row-animation.move-left .card");
+
+      // Function to toggle shrink and expand for specific cards
+      function autoShrinkExpand(cards, indices) {
+        cards.forEach((card, index) => {
+          if (indices.includes(index)) {
+            setInterval(() => {
+              card.classList.toggle("shrink");
+              card.classList.toggle("expand");
+            }, 2000); // Toggle every 2 seconds
+          }
+        });
+      }
+
+      // Automatically shrink and expand specific cards
+      autoShrinkExpand(firstRowCards, [2, 4]); // 3rd and 5th card in the first row
+      autoShrinkExpand(secondRowCards, [1]); // 2nd card in the second row
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<section class="highlight-carousel">
+  <h2 class="section-title">Catch the Rabbit ✦</h2>
+  <div class="carousel-container">
+      <!-- Row 1 -->
+      <div class="carousel-row row-1">
+          <div class="card" data-card="1"></div>
+          <div class="card" data-card="2"></div>
+          <div class="card" data-card="3"></div>
+          <div class="card" data-card="4"></div>
+          <div class="card" data-card="5"></div>
+          <div class="card" data-card="6"></div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="carousel-row row-2">
+          <div class="card" data-card="7"></div>
+          <div class="card" data-card="8"></div>
+          <div class="card" data-card="9"></div>
+          <div class="card" data-card="10"></div>
+          <div class="card" data-card="11"></div>
+          <div class="card" data-card="12"></div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="carousel-row row-3">
+          <div class="card" data-card="13"></div>
+          <div class="card" data-card="14"></div>
+          <div class="card" data-card="15"></div>
+          <div class="card" data-card="16"></div>
+          <div class="card" data-card="17"></div>
+          <div class="card" data-card="18"></div>
+      </div>
+  </div>
+</section>
+
+<section class="gradient-card-section">
+  <div class="contain2">
+      <div class="row">
+          <!-- Column 1: About Card -->
+          <div class="col-md-6 about-col">
+              <div class="gradient-card">
+                  <!-- Animated GIF -->
+
+                  <!-- Profile Card -->
+                  <div class="profile-card">
+                      <img src="assets/img/profile-picture.svg" alt="Profile Avatar" class="profile-avatar">
+                      <h2>Bridget Pro</h2>
+                      <p class="bio">
+                          A frontend-obsessed developer, full-stack engineer, and project manager
+                          who crafts sleek, high-performance digital experiences. Passionate about UI/UX, 
+                          scalability, and modern web technologies.
+                      </p>
+                      <div class="tech-stack">
+                          <span>HTML5</span>
+                          <span>CSS3</span>
+                          <span>JavaScript</span>
+                          <span>React</span>
+                          <span>Node.js</span>
+                          <span>Bootstrap</span>
+                          <span>Php</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Column 2: Work Experience -->
+          <div class="col-md-6 experience-col">
+              <div class="experience-card">
+                  <h2 class="experience-title">Work Experience ✦</h2>
+                  
+                  <div class="experience-item">
+                      <span class="experience-badge" style="background: #FFD700;">1</span>
+                      <p><strong>Project manager<span class="highlight"> Xora</span></strong><br>
+                      Worked on design system at Material Designs<br>
+                      <small>10, Jan 2024</small></p>
+                  </div>
+
+                  <div class="experience-item">
+                      <span class="experience-badge" style="background: #00BFFF;">2</span>
+                      <p><strong>Front-end Developer<span class="highlight"> DevHUB</span></strong><br>
+                      Built the frontend for major projects from design interperetation to full development<br>
+                      <small>20, April 2023</small></p>
+                  </div>
+
+                  <div class="experience-item">
+                      <span class="experience-badge" style="background: #FF69B4;">3</span>
+                      <p><strong>Graphic Designer <span class="highlight"> Finrik</span></strong><br>
+                      Worked on brand identity and marketing materials for various platforms<br>
+                      <small>06, Dec 2022</small></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-logo"><span style="color: #ffcc70;">BridgetPro</span></div>
+  <div class="social-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-dribbble"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+  </div>
+  <div class="hire-button">
+      <button>Hire Me</button>
+      <div class="icon"><i class="fas fa-user"></i></div>
+  </div>
+
+  <p class="footer-text">© 2019 - 2025 Bridget Pro. All rights reserved.</p>
+</footer>
